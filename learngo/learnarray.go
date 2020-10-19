@@ -1,7 +1,35 @@
 package learngo
 
-import "rsc.io/quote"
+import (
+	"fmt"
+
+	"rsc.io/quote"
+)
 
 func SomeFn() string {
-    return quote.Hello()
+	return quote.Hello()
+}
+
+func RunCaseArray() {
+	var a [5]int
+	fmt.Println("emp:", a)
+
+	a[4] = 100
+	fmt.Println("set:", a)
+	fmt.Println("set:", a[4])
+
+	fmt.Println("length: ", len(a))
+
+	b := [5]int{1, 2, 3, 4, 5}
+	fmt.Println("dcl:", b)
+	b = [5]int{1: 5}
+	fmt.Println("dcl:", b)
+
+	var twoD [2][3]int
+	for i := 0; i < 2; i++ {
+		for j := 0; j < 3; j++ {
+			twoD[i][j] = i + j
+		}
+	}
+	fmt.Println("2d:", twoD)
 }

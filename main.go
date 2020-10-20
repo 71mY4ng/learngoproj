@@ -10,5 +10,7 @@ func main() {
 	// fmt.Println(second.HelloWithFirst())
 
 	// learngo.RunCaseSwitch()
-	learngo.RunCaseArray()
+	// learngo.RunCaseArray()
+	// learngo.RunCaseBasicDefer()
+	learngo.RunCasePanicDeferRecover()
 }

@@ -13,5 +13,6 @@ func main() {
 	// learngo.RunCaseArray()
 	// learngo.RunCaseBasicDefer()
 	// learngo.RunCasePanicDeferRecover()
-	learngo.RunCasePointers()
+	// learngo.RunCasePointers()
+	learngo.RunCaseFunction()
 }
